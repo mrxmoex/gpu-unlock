@@ -1,0 +1,2 @@
+build/rpm/RPMS
+build/rpm/RPMS/x86_64

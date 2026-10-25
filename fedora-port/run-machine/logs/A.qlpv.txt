@@ -1,0 +1,40 @@
+PKG build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+-rw-r--r--    1 root     root                      200 Sep 28 00:00 /usr/lib/dracut/dracut.conf.d/gpu-unlock.conf
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/doc/gpu-unlock
+-rw-r--r--    1 root     root                    11092 Sep 28 00:00 /usr/share/doc/gpu-unlock/README.md
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms
+-rw-r--r--    1 root     root                     1057 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt
+-rw-r--r--    1 root     root                    18092 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+-rw-r--r--    1 root     root                     1219 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0
+-rw-r--r--    1 root     root                      148 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Kbuild
+-rw-r--r--    1 root     root                      250 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Makefile
+-rw-r--r--    1 root     root                      990 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/diagnostic.h
+-rw-r--r--    1 root     root                      489 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/dkms.conf
+-rw-r--r--    1 root     root                      827 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+-rw-r--r--    1 root     root                     1314 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+-rw-r--r--    1 root     root                     2807 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.c
+-rw-r--r--    1 root     root                      815 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.h
+-rw-r--r--    1 root     root                     6504 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/main.c
+-rw-r--r--    1 root     root                     7762 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.c
+-rw-r--r--    1 root     root                     2361 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.h
+-rw-r--r--    1 root     root                    54308 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.c
+-rw-r--r--    1 root     root                     1315 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.h
+-rw-r--r--    1 root     root                     9619 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.c
+-rw-r--r--    1 root     root                      930 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.h
+PKG build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03
+-rw-r--r--    1 root     root                    61256 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin
+-rw-r--r--    1 root     root                       84 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin
+-rw-r--r--    1 root     root                    24576 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin
+-rw-r--r--    1 root     root                 84277400 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+-rw-r--r--    1 root     root                    64000 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware
+-rw-r--r--    1 root     root                     1904 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NOTICE.md
+-rw-r--r--    1 root     root                    22653 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE
+PKG build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+-rw-r--r--    1 root     root                 26172192 Sep 28 00:00 NVIDIA-kernel-module-source-610.43.03.tar.xz
+-rw-r--r--    1 root     root                    63300 Sep 28 00:00 gpu-unlock-1.0.0.tar.xz
+-rw-r--r--    1 root     root                     4689 Sep 28 00:00 gpu-unlock.spec
+-rw-r--r--    1 root     root                314789539 Sep 28 00:00 nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst

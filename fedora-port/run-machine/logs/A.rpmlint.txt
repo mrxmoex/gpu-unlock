@@ -1,0 +1,37 @@
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+============================ rpmlint session starts ============================
+rpmlint: 2.8.0
+configuration:
+    /usr/lib/python3.14/site-packages/rpmlint/configdefaults.toml
+    /etc/xdg/rpmlint/fedora-spdx-licenses.toml
+    /etc/xdg/rpmlint/fedora.toml
+    /etc/xdg/rpmlint/scoring.toml
+    /etc/xdg/rpmlint/users-groups.toml
+    /etc/xdg/rpmlint/warn-on-functions.toml
+checks: 32, packages: 2
+
+gpu-unlock-dkms.noarch: E: spelling-error ('nvidia', '%description -l en_US nvidia -> NVIDIA, Nvidia')
+gpu-unlock-dkms.noarch: W: only-non-binary-in-usr-lib
+gpu-unlock-dkms.noarch: W: no-url-tag
+gpu-unlock-firmware.noarch: W: no-url-tag
+gpu-unlock-firmware.noarch: W: no-documentation
+gpu-unlock-firmware.noarch: W: invalid-license LicenseRef-NVIDIA
+gpu-unlock-dkms.noarch: E: incorrect-fsf-address /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/diagnostic.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/layout_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/layout_610.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/main.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/prep_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/prep_610.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/unlock_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/unlock_610.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/vbios_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/vbios_610.h
+gpu-unlock-dkms.noarch: W: dangerous-command-in-%postun rm
+gpu-unlock-firmware.noarch: E: arch-independent-package-contains-binary-or-object /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+ 2 packages and 0 specfiles checked; 3 errors, 18 warnings, 7 filtered, 3 badness; has taken 1.5 s 

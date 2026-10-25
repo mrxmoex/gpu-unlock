@@ -1,0 +1,2 @@
+build/rpm/RPMS/x86_64/gpu-unlock-dkms-1.0.0-1.fc44.x86_64.rpm
+build/rpm/RPMS/x86_64/gpu-unlock-firmware-1.0.0-1.fc44.x86_64.rpm

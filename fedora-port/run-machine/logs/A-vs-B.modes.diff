@@ -1,0 +1,9 @@
+--- /work/out/A.modes.txt	2026-10-25 12:48:25.750254491 +0000
++++ /work/out/B.modes.txt	2026-10-25 12:49:04.114183743 +0000
+@@ -36,5 +36,5 @@
+ PKG build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+ -rw-r--r-- root root 26172192 NVIDIA-kernel-module-source-610.43.03.tar.xz mode=100644 color=(none)
+ -rw-r--r-- root root 63300 gpu-unlock-1.0.0.tar.xz mode=100644 color=(none)
+--rw-r--r-- root root 4689 gpu-unlock.spec mode=100644 color=(none)
++-rw-r--r-- root root 4749 gpu-unlock.spec mode=100644 color=(none)
+ -rw-r--r-- root root 314789539 nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst mode=100644 color=(none)

@@ -1,0 +1,14 @@
+=== grep firmware names ===
+32:#define BOOTER_FILE "gpu-unlock/610.43.03/booter_load_ga102.bin"
+33:#define V67_FILE "gpu-unlock/610.43.03/v67-ga102-610.43.03.bin"
+34:#define GSP_FILE "gpu-unlock/610.43.03/gsp_ga10x.bin"
+35:#define BOOT_FILE "gpu-unlock/610.43.03/gsp_boot_ga102.bin"
+36:#define BOOT_DESC_FILE "gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin"
+161: * devm_request_firmware(). release_firmware() does not remove them, and
+175:	ret = request_firmware(fw, name, dev);
+1498:MODULE_FIRMWARE(BOOTER_FILE);
+1499:MODULE_FIRMWARE(V67_FILE);
+1500:MODULE_FIRMWARE(GSP_FILE);
+1501:MODULE_FIRMWARE(BOOT_FILE);
+1502:MODULE_FIRMWARE(BOOT_DESC_FILE);
+GREP_EXIT:0

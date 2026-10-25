@@ -1,0 +1,4 @@
+20:+ sha256sum -c -
+202:Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+203:Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+204:Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm

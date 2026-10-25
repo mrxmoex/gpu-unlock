@@ -1,0 +1,8 @@
+qlpv A vs B binary_equal True srpm_equal False
+qlpv A vs C binary_equal True srpm_equal False
+modes A vs B binary_equal True srpm_equal False
+modes A vs C binary_equal True srpm_equal False
+qlp A vs B binary_equal True srpm_equal True
+qlp A vs C binary_equal True srpm_equal True
+modes A vs E binary_equal False
+modes A vs G binary_equal False

@@ -1,0 +1,40 @@
+PKG build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+-rw-r--r-- root root 200 /usr/lib/dracut/dracut.conf.d/gpu-unlock.conf mode=100644 color=0
+drwxr-xr-x root root 0 /usr/share/doc/gpu-unlock mode=40755 color=0
+-rw-r--r-- root root 11092 /usr/share/doc/gpu-unlock/README.md mode=100644 color=0
+drwxr-xr-x root root 0 /usr/share/licenses/gpu-unlock-dkms mode=40755 color=0
+-rw-r--r-- root root 1057 /usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt mode=100644 color=0
+-rw-r--r-- root root 18092 /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt mode=100644 color=0
+-rw-r--r-- root root 1219 /usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt mode=100644 color=0
+drwxr-xr-x root root 0 /usr/src/gpu-unlock-1.0.0 mode=40755 color=0
+-rw-r--r-- root root 148 /usr/src/gpu-unlock-1.0.0/Kbuild mode=100644 color=0
+-rw-r--r-- root root 250 /usr/src/gpu-unlock-1.0.0/Makefile mode=100644 color=0
+-rw-r--r-- root root 990 /usr/src/gpu-unlock-1.0.0/diagnostic.h mode=100644 color=0
+-rw-r--r-- root root 489 /usr/src/gpu-unlock-1.0.0/dkms.conf mode=100644 color=0
+-rw-r--r-- root root 827 /usr/src/gpu-unlock-1.0.0/gfw_eval.c mode=100644 color=0
+-rw-r--r-- root root 1314 /usr/src/gpu-unlock-1.0.0/gfw_eval.h mode=100644 color=0
+-rw-r--r-- root root 2807 /usr/src/gpu-unlock-1.0.0/layout_610.c mode=100644 color=0
+-rw-r--r-- root root 815 /usr/src/gpu-unlock-1.0.0/layout_610.h mode=100644 color=0
+-rw-r--r-- root root 6504 /usr/src/gpu-unlock-1.0.0/main.c mode=100644 color=0
+-rw-r--r-- root root 7762 /usr/src/gpu-unlock-1.0.0/prep_610.c mode=100644 color=0
+-rw-r--r-- root root 2361 /usr/src/gpu-unlock-1.0.0/prep_610.h mode=100644 color=0
+-rw-r--r-- root root 54308 /usr/src/gpu-unlock-1.0.0/unlock_610.c mode=100644 color=0
+-rw-r--r-- root root 1315 /usr/src/gpu-unlock-1.0.0/unlock_610.h mode=100644 color=0
+-rw-r--r-- root root 9619 /usr/src/gpu-unlock-1.0.0/vbios_610.c mode=100644 color=0
+-rw-r--r-- root root 930 /usr/src/gpu-unlock-1.0.0/vbios_610.h mode=100644 color=0
+PKG build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+drwxr-xr-x root root 0 /usr/lib/firmware/gpu-unlock mode=40755 color=0
+drwxr-xr-x root root 0 /usr/lib/firmware/gpu-unlock/610.43.03 mode=40755 color=0
+-rw-r--r-- root root 61256 /usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin mode=100644 color=0
+-rw-r--r-- root root 84 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin mode=100644 color=0
+-rw-r--r-- root root 24576 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin mode=100644 color=0
+-rw-r--r-- root root 84277400 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin mode=100644 color=0
+-rw-r--r-- root root 64000 /usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin mode=100644 color=0
+drwxr-xr-x root root 0 /usr/share/licenses/gpu-unlock-firmware mode=40755 color=0
+-rw-r--r-- root root 1904 /usr/share/licenses/gpu-unlock-firmware/NOTICE.md mode=100644 color=0
+-rw-r--r-- root root 22653 /usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE mode=100644 color=0
+PKG build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+-rw-r--r-- root root 26172192 NVIDIA-kernel-module-source-610.43.03.tar.xz mode=100644 color=(none)
+-rw-r--r-- root root 63300 gpu-unlock-1.0.0.tar.xz mode=100644 color=(none)
+-rw-r--r-- root root 4749 gpu-unlock.spec mode=100644 color=(none)
+-rw-r--r-- root root 314789539 nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst mode=100644 color=(none)

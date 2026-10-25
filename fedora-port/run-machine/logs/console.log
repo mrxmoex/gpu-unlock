@@ -1,0 +1,32 @@
+START 2026-10-25T12:47:51Z
+HEAD af28cbbfd3d922a659227ecfb7369adfd924cf03
+STATUS ## cursor/gpu-unlock-machine...origin/cursor/gpu-unlock-machine
+### A spec=pristine.spec preload=none 2026-10-25T12:47:51Z
+A exit=0
+### D spec=pristine.spec preload=/work/emulate/noperm_shim.so 2026-10-25T12:48:29Z
+D exit=2
+### B spec=defattr.spec preload=none 2026-10-25T12:48:39Z
+B exit=0
+### C spec=defattr.spec preload=/work/emulate/noperm_shim.so 2026-10-25T12:49:07Z
+C exit=0
+### E spec=macro.spec preload=/work/emulate/noperm_shim.so 2026-10-25T12:49:36Z
+E exit=0
+### F spec=dropped-noarch.spec preload=none 2026-10-25T12:50:05Z
+F exit=2
+### G spec=attr.spec preload=/work/emulate/noperm_shim.so 2026-10-25T12:50:15Z
+G exit=0
+### compare A vs B
+qlpv_nodate_diff_bytes 403
+modes_diff_bytes 615
+qlp_diff_bytes 0
+### assets file/readelf
+### makefile glob against F if present
+138:	rpmbuild -ba --define "_topdir $(RPMDIR)" packaging/rpm/gpu-unlock.spec
+140:install-rpm:
+144:	sudo dnf install -y $(RPMDIR)/RPMS/noarch/gpu-unlock-*-$(VERSION)-*.noarch.rpm
+### sha256 lines from A
+20:+ sha256sum -c -
+21:/work/gpu-unlock/build/rpm/SOURCES/NVIDIA-kernel-module-source-610.43.03.tar.xz: OK
+22:/work/gpu-unlock/build/rpm/SOURCES/nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst: OK
+170:OK
+END 2026-10-25T12:50:43Z

@@ -1,0 +1,5 @@
+174:Processing files: gpu-unlock-dkms-1.0.0-1.fc44.x86_64
+197:Processing files: gpu-unlock-firmware-1.0.0-1.fc44.x86_64
+201:Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+202:Wrote: /work/gpu-unlock/build/rpm/RPMS/x86_64/gpu-unlock-dkms-1.0.0-1.fc44.x86_64.rpm
+203:Wrote: /work/gpu-unlock/build/rpm/RPMS/x86_64/gpu-unlock-firmware-1.0.0-1.fc44.x86_64.rpm

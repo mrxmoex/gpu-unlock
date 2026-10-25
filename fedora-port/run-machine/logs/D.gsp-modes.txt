@@ -1,0 +1,2 @@
+644 84277400 build/rpm/BUILD/gpu-unlock-1.0.0-build/gpu-unlock-1.0.0/assets/gsp_ga10x.bin
+755 84277400 build/rpm/BUILD/gpu-unlock-1.0.0-build/BUILDROOT/usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin

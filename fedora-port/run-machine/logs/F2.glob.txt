@@ -1,0 +1,2 @@
+ls: cannot access 'build/rpm/RPMS/noarch/gpu-unlock-*-1.0.0-*.noarch.rpm': No such file or directory
+GLOB_EXIT:2

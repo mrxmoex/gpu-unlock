@@ -1,0 +1,40 @@
+PKG build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+/usr/lib/dracut/dracut.conf.d/gpu-unlock.conf
+/usr/share/doc/gpu-unlock
+/usr/share/doc/gpu-unlock/README.md
+/usr/share/licenses/gpu-unlock-dkms
+/usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt
+/usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+/usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt
+/usr/src/gpu-unlock-1.0.0
+/usr/src/gpu-unlock-1.0.0/Kbuild
+/usr/src/gpu-unlock-1.0.0/Makefile
+/usr/src/gpu-unlock-1.0.0/diagnostic.h
+/usr/src/gpu-unlock-1.0.0/dkms.conf
+/usr/src/gpu-unlock-1.0.0/gfw_eval.c
+/usr/src/gpu-unlock-1.0.0/gfw_eval.h
+/usr/src/gpu-unlock-1.0.0/layout_610.c
+/usr/src/gpu-unlock-1.0.0/layout_610.h
+/usr/src/gpu-unlock-1.0.0/main.c
+/usr/src/gpu-unlock-1.0.0/prep_610.c
+/usr/src/gpu-unlock-1.0.0/prep_610.h
+/usr/src/gpu-unlock-1.0.0/unlock_610.c
+/usr/src/gpu-unlock-1.0.0/unlock_610.h
+/usr/src/gpu-unlock-1.0.0/vbios_610.c
+/usr/src/gpu-unlock-1.0.0/vbios_610.h
+PKG build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+/usr/lib/firmware/gpu-unlock
+/usr/lib/firmware/gpu-unlock/610.43.03
+/usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin
+/usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin
+/usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin
+/usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+/usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin
+/usr/share/licenses/gpu-unlock-firmware
+/usr/share/licenses/gpu-unlock-firmware/NOTICE.md
+/usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE
+PKG build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+NVIDIA-kernel-module-source-610.43.03.tar.xz
+gpu-unlock-1.0.0.tar.xz
+gpu-unlock.spec
+nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst

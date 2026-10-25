@@ -1,0 +1,25 @@
+20:+ sha256sum -c -
+121:*** WARNING: ./usr/src/gpu-unlock-1.0.0/vbios_610.c is executable but has no shebang, removing executable bit
+122:*** WARNING: ./usr/src/gpu-unlock-1.0.0/gfw_eval.c is executable but has no shebang, removing executable bit
+123:*** WARNING: ./usr/src/gpu-unlock-1.0.0/Kbuild is executable but has no shebang, removing executable bit
+124:*** WARNING: ./usr/src/gpu-unlock-1.0.0/gfw_eval.h is executable but has no shebang, removing executable bit
+125:*** WARNING: ./usr/src/gpu-unlock-1.0.0/prep_610.h is executable but has no shebang, removing executable bit
+126:*** WARNING: ./usr/src/gpu-unlock-1.0.0/Makefile is executable but has no shebang, removing executable bit
+127:*** WARNING: ./usr/src/gpu-unlock-1.0.0/dkms.conf is executable but has no shebang, removing executable bit
+128:*** WARNING: ./usr/src/gpu-unlock-1.0.0/vbios_610.h is executable but has no shebang, removing executable bit
+129:*** WARNING: ./usr/src/gpu-unlock-1.0.0/layout_610.c is executable but has no shebang, removing executable bit
+130:*** WARNING: ./usr/src/gpu-unlock-1.0.0/layout_610.h is executable but has no shebang, removing executable bit
+131:*** WARNING: ./usr/src/gpu-unlock-1.0.0/main.c is executable but has no shebang, removing executable bit
+132:*** WARNING: ./usr/src/gpu-unlock-1.0.0/prep_610.c is executable but has no shebang, removing executable bit
+133:*** WARNING: ./usr/src/gpu-unlock-1.0.0/diagnostic.h is executable but has no shebang, removing executable bit
+134:*** WARNING: ./usr/src/gpu-unlock-1.0.0/unlock_610.h is executable but has no shebang, removing executable bit
+135:*** WARNING: ./usr/src/gpu-unlock-1.0.0/unlock_610.c is executable but has no shebang, removing executable bit
+136:*** WARNING: ./usr/share/doc/gpu-unlock/README.md is executable but has no shebang, removing executable bit
+137:*** WARNING: ./usr/share/licenses/gpu-unlock-firmware/NOTICE.md is executable but has no shebang, removing executable bit
+138:*** WARNING: ./usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE is executable but has no shebang, removing executable bit
+139:*** WARNING: ./usr/lib/dracut/dracut.conf.d/gpu-unlock.conf is executable but has no shebang, removing executable bit
+220:warning: Arch dependent binaries in noarch package
+222:Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+223:Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+224:Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+236:    Arch dependent binaries in noarch package
