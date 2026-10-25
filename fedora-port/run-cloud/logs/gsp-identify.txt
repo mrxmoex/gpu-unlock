@@ -1,0 +1,58 @@
+=== file ===
+usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin:   data
+usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin: data
+usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin:      data
+usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin:           ELF 64-bit LSB relocatable, UCB RISC-V, soft-float ABI, version 1 (SYSV), BuildID[sha1]=3609758e15d41b2720db2ffb49df623c4ac21c62, not stripped
+usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin: SIMH tape data
+=== readelf -h ===
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              REL (Relocatable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          0 (bytes into file)
+  Start of section headers:          84276184 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           0 (bytes)
+  Number of program headers:         0
+  Size of section headers:           64 (bytes)
+  Number of section headers:         19
+  Section header string table index: 18
+READELF_H:0
+=== readelf -S -W ===
+There are 19 section headers, starting at offset 0x505f3d8:
+
+Section Headers:
+  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+  [ 1] .fwimage          PROGBITS        0000000000000000 000040 5053000 00  WA  0   0  1
+  [ 2] .note.gnu.build-id NOTE            0000000000000000 5053040 000024 00      0   0  1
+  [ 3] .fwversion        PROGBITS        0000000000000000 5053064 00000a 00      0   0  1
+  [ 4] .fwsignature_cc_gr10x PROGBITS        0000000000000000 505306e 001000 00      0   0  1
+  [ 5] .fwsignature_gr10x PROGBITS        0000000000000000 505406e 001000 00      0   0  1
+  [ 6] .fwsignature_gb20y PROGBITS        0000000000000000 505506e 001000 00      0   0  1
+  [ 7] .fwsignature_cc_gb20x PROGBITS        0000000000000000 505606e 001000 00      0   0  1
+  [ 8] .fwsignature_gb20x PROGBITS        0000000000000000 505706e 001000 00      0   0  1
+  [ 9] .fwsignature_cc_gb10x PROGBITS        0000000000000000 505806e 001000 00      0   0  1
+  [10] .fwsignature_gb10y PROGBITS        0000000000000000 505906e 001000 00      0   0  1
+  [11] .fwsignature_gb10x PROGBITS        0000000000000000 505a06e 001000 00      0   0  1
+  [12] .fwsignature_cc_gh100 PROGBITS        0000000000000000 505b06e 001000 00      0   0  1
+  [13] .fwsignature_gh100 PROGBITS        0000000000000000 505c06e 001000 00      0   0  1
+  [14] .fwsignature_ad10x PROGBITS        0000000000000000 505d06e 001000 00      0   0  1
+  [15] .fwsignature_ga10x PROGBITS        0000000000000000 505e06e 001000 00      0   0  1
+  [16] .symtab           SYMTAB          0000000000000000 505f070 000060 18     17   1  8
+  [17] .strtab           STRTAB          0000000000000000 505f0d0 0001d2 00      0   0  1
+  [18] .shstrtab         STRTAB          0000000000000000 505f2a2 000132 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), p (processor specific)
+READELF_S:0

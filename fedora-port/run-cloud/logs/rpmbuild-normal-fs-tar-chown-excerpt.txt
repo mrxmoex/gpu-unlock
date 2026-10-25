@@ -1,0 +1,56 @@
+lines=3952
+ownership_errors=3868
+--- head ---
+===VERSIONS===
+RPM version 6.0.2
+gcc (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2)
+Python 3.14.8
+6.12.94+
+BINARIES_MACRO:
+1
+===DF===
+Filesystem     Type  1K-blocks    Used Available Use% Mounted on
+-              -     265592036 8768144 256807508   4% /
+tmpfs          tmpfs   8193640       0   8193640   0% /tmp
+===MAKE===
+mkdir -p build
+git archive --format=tar --prefix=gpu-unlock-1.0.0/ \
+	--output=build/gpu-unlock-1.0.0.tar HEAD
+xz -9 -f build/gpu-unlock-1.0.0.tar
+python3 firmware/fetch_artifacts.py /root/.cache/gpu-unlock/inputs
+/root/.cache/gpu-unlock/inputs/NVIDIA-kernel-module-source-610.43.03.tar.xz
+/root/.cache/gpu-unlock/inputs/nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst
+rm -rf /work/gpu-unlock/build/rpm
+mkdir -p /work/gpu-unlock/build/rpm/SOURCES
+cp /work/gpu-unlock/build/gpu-unlock-1.0.0.tar.xz /work/gpu-unlock/build/rpm/SOURCES/
+ln -s /root/.cache/gpu-unlock/inputs/NVIDIA-kernel-module-source-610.43.03.tar.xz /root/.cache/gpu-unlock/inputs/nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst /work/gpu-unlock/build/rpm/SOURCES/
+rpmbuild -ba --define "_topdir /work/gpu-unlock/build/rpm" packaging/rpm/gpu-unlock.spec
+Building target platforms: noarch
+Building for target noarch
+setting SOURCE_DATE_EPOCH=1790553600
+Executing(%mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.rFbxhz
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.4mRoGA
++ umask 022
++ cd /work/gpu-unlock/build/rpm/BUILD/gpu-unlock-1.0.0-build
++ sha256sum -c -
+/work/gpu-unlock/build/rpm/SOURCES/NVIDIA-kernel-module-source-610.43.03.tar.xz: OK
+/work/gpu-unlock/build/rpm/SOURCES/nvidia-utils-610.43.03-1-x86_64_v3.pkg.tar.zst: OK
++ cd /work/gpu-unlock/build/rpm/BUILD/gpu-unlock-1.0.0-build
++ rm -rf gpu-unlock-1.0.0
++ /usr/lib/rpm/rpmuncompress -x /work/gpu-unlock/build/rpm/SOURCES/gpu-unlock-1.0.0.tar.xz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gpu-unlock-1.0.0
+--- tail ---
+tar: NVIDIA-kernel-module-source-610.43.03/src/nvidia/src/kernel/gpu/mig_mgr/arch/ampere/kmigmgr_ga100.c: Cannot change ownership to uid 1000, gid 1000: Invalid argument
+tar: NVIDIA-kernel-module-source-610.43.03/src/common/inc/swref/published/nvswitch/ls10/dev_nv_xal_ep.h: Cannot change ownership to uid 1000, gid 1000: Invalid argument
+tar: NVIDIA-kernel-module-source-610.43.03/src/nvidia/generated/g_gsync_nvoc.c: Cannot change ownership to uid 1000, gid 1000: Invalid argument
+tar: Exiting with failure status due to previous errors
+make[1]: *** [Makefile:56: firmware] Error 2
+make[1]: Leaving directory '/work/gpu-unlock/build/rpm/BUILD/gpu-unlock-1.0.0-build/gpu-unlock-1.0.0'
+error: Bad exit status from /var/tmp/rpm-tmp.XdT1ea (%build)
+
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.XdT1ea (%build)
+make: *** [Makefile:138: rpm] Error 1
+MAKE_EXIT:2

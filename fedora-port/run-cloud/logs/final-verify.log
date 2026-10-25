@@ -1,0 +1,92 @@
+===== C NORMAL NO PRELOAD =====
+C_NORMAL_EXIT:2
+204:error: Empty %files file /work/gpu-unlock/build/rpm/BUILD/gpu-unlock-1.0.0-build/gpu-unlock-1.0.0/debugsourcefiles.list
+===== C NODEBUG NORMAL =====
+C_NODEBUG_EXIT:0
+C_NODEBUG_WROTE:
+Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/x86_64/gpu-unlock-dkms-1.0.0-1.fc44.x86_64.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/x86_64/gpu-unlock-firmware-1.0.0-1.fc44.x86_64.rpm
+C_NODEBUG_TREE:
+build/rpm/RPMS/x86_64/gpu-unlock-dkms-1.0.0-1.fc44.x86_64.rpm
+build/rpm/RPMS/x86_64/gpu-unlock-firmware-1.0.0-1.fc44.x86_64.rpm
+C_NODEBUG_GLOB:
+(no match)
+===== FIX NORMAL =====
+FIX_EXIT:0
+120:+ /usr/lib/rpm/redhat/brp-mangle-shebangs
+202:Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+203:Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+204:Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+===== FIX QLPV =====
+-rw-r--r--    1 root     root                      200 Sep 28 00:00 /usr/lib/dracut/dracut.conf.d/gpu-unlock.conf
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/doc/gpu-unlock
+-rw-r--r--    1 root     root                    11092 Sep 28 00:00 /usr/share/doc/gpu-unlock/README.md
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms
+-rw-r--r--    1 root     root                     1057 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt
+-rw-r--r--    1 root     root                    18092 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+-rw-r--r--    1 root     root                     1219 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0
+-rw-r--r--    1 root     root                      148 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Kbuild
+-rw-r--r--    1 root     root                      250 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Makefile
+-rw-r--r--    1 root     root                      990 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/diagnostic.h
+-rw-r--r--    1 root     root                      489 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/dkms.conf
+-rw-r--r--    1 root     root                      827 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+-rw-r--r--    1 root     root                     1314 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+-rw-r--r--    1 root     root                     2807 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.c
+-rw-r--r--    1 root     root                      815 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.h
+-rw-r--r--    1 root     root                     6504 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/main.c
+-rw-r--r--    1 root     root                     7762 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.c
+-rw-r--r--    1 root     root                     2361 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.h
+-rw-r--r--    1 root     root                    54308 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.c
+-rw-r--r--    1 root     root                     1315 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.h
+-rw-r--r--    1 root     root                     9619 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.c
+-rw-r--r--    1 root     root                      930 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.h
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03
+-rw-r--r--    1 root     root                    61256 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin
+-rw-r--r--    1 root     root                       84 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin
+-rw-r--r--    1 root     root                    24576 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin
+-rw-r--r--    1 root     root                 84277400 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+-rw-r--r--    1 root     root                    64000 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware
+-rw-r--r--    1 root     root                     1904 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NOTICE.md
+-rw-r--r--    1 root     root                    22653 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE
+===== FIX RPMLINT =====
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+============================ rpmlint session starts ============================
+rpmlint: 2.8.0
+configuration:
+    /usr/lib/python3.14/site-packages/rpmlint/configdefaults.toml
+    /etc/xdg/rpmlint/fedora-spdx-licenses.toml
+    /etc/xdg/rpmlint/fedora.toml
+    /etc/xdg/rpmlint/scoring.toml
+    /etc/xdg/rpmlint/users-groups.toml
+    /etc/xdg/rpmlint/warn-on-functions.toml
+checks: 32, packages: 2
+
+gpu-unlock-dkms.noarch: E: spelling-error ('nvidia', '%description -l en_US nvidia -> NVIDIA, Nvidia')
+gpu-unlock-dkms.noarch: W: only-non-binary-in-usr-lib
+gpu-unlock-dkms.noarch: W: no-url-tag
+gpu-unlock-firmware.noarch: W: no-url-tag
+gpu-unlock-firmware.noarch: W: no-documentation
+gpu-unlock-firmware.noarch: W: invalid-license LicenseRef-NVIDIA
+gpu-unlock-dkms.noarch: E: incorrect-fsf-address /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/diagnostic.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/layout_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/layout_610.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/main.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/prep_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/prep_610.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/unlock_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/unlock_610.h
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/vbios_610.c
+gpu-unlock-dkms.noarch: W: devel-file-in-non-devel-package /usr/src/gpu-unlock-1.0.0/vbios_610.h
+gpu-unlock-dkms.noarch: W: dangerous-command-in-%postun rm
+gpu-unlock-firmware.noarch: E: arch-independent-package-contains-binary-or-object /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+ 2 packages and 0 specfiles checked; 3 errors, 18 warnings, 7 filtered, 3 badness; has taken 1.5 s 

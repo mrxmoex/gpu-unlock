@@ -58,12 +58,17 @@ make DESTDIR=%{buildroot} ASSETS="$PWD/assets" \
     install-dkms install-firmware install-dracut
 
 %files dkms
+# Payload mode, not the build-tree mode. rpm 6 colors an ELF as an
+# arch-dependent binary only when that payload mode is executable.
+%defattr(0644,root,root,0755)
 %license licenses/GPL-2.0.txt licenses/CMP40HX-MIT.txt licenses/NVIDIA-MIT.txt
 %doc %{_docdir}/gpu-unlock
 %{_usrsrc}/gpu-unlock-%{version}
 %{_prefix}/lib/dracut/dracut.conf.d/gpu-unlock.conf
 
 %files firmware
+# Same payload mode as the dkms package. See the note above.
+%defattr(0644,root,root,0755)
 %license %{_defaultlicensedir}/gpu-unlock-firmware
 %{_prefix}/lib/firmware/gpu-unlock
 

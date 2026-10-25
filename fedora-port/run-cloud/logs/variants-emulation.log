@@ -1,0 +1,154 @@
+===== BUILD a-defattr =====
+a-defattr MAKE_EXIT:0
+a-defattr SHEBANGS:19
+a-defattr ARCHERR:0
+a-defattr WROTE:
+Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+a-defattr RPMS:
+build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm 45839
+build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm 71078022
+a-defattr GLOB:
+  build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+  build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+a-defattr QLPV:
+-rw-r--r--    1 root     root                      200 Sep 28 00:00 /usr/lib/dracut/dracut.conf.d/gpu-unlock.conf
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/doc/gpu-unlock
+-rw-r--r--    1 root     root                    11092 Sep 28 00:00 /usr/share/doc/gpu-unlock/README.md
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms
+-rw-r--r--    1 root     root                     1057 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt
+-rw-r--r--    1 root     root                    18092 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+-rw-r--r--    1 root     root                     1219 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0
+-rw-r--r--    1 root     root                      148 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Kbuild
+-rw-r--r--    1 root     root                      250 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Makefile
+-rw-r--r--    1 root     root                      990 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/diagnostic.h
+-rw-r--r--    1 root     root                      489 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/dkms.conf
+-rw-r--r--    1 root     root                      827 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+-rw-r--r--    1 root     root                     1314 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+-rw-r--r--    1 root     root                     2807 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.c
+-rw-r--r--    1 root     root                      815 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.h
+-rw-r--r--    1 root     root                     6504 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/main.c
+-rw-r--r--    1 root     root                     7762 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.c
+-rw-r--r--    1 root     root                     2361 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.h
+-rw-r--r--    1 root     root                    54308 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.c
+-rw-r--r--    1 root     root                     1315 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.h
+-rw-r--r--    1 root     root                     9619 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.c
+-rw-r--r--    1 root     root                      930 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.h
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03
+-rw-r--r--    1 root     root                    61256 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin
+-rw-r--r--    1 root     root                       84 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin
+-rw-r--r--    1 root     root                    24576 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin
+-rw-r--r--    1 root     root                 84277400 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+-rw-r--r--    1 root     root                    64000 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware
+-rw-r--r--    1 root     root                     1904 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NOTICE.md
+-rw-r--r--    1 root     root                    22653 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE
+===== BUILD b-mute =====
+b-mute MAKE_EXIT:0
+b-mute SHEBANGS:19
+b-mute ARCHERR:2
+b-mute WROTE:
+Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+b-mute RPMS:
+build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm 45856
+build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm 71078000
+b-mute GLOB:
+  build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+  build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+b-mute QLPV:
+-rwxr-xr-x    1 root     root                      200 Sep 28 00:00 /usr/lib/dracut/dracut.conf.d/gpu-unlock.conf
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/doc/gpu-unlock
+-rwxr-xr-x    1 root     root                    11092 Sep 28 00:00 /usr/share/doc/gpu-unlock/README.md
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms
+-rwxr-xr-x    1 root     root                     1057 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt
+-rwxr-xr-x    1 root     root                    18092 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+-rwxr-xr-x    1 root     root                     1219 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0
+-rwxr-xr-x    1 root     root                      148 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Kbuild
+-rwxr-xr-x    1 root     root                      250 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Makefile
+-rwxr-xr-x    1 root     root                      990 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/diagnostic.h
+-rwxr-xr-x    1 root     root                      489 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/dkms.conf
+-rwxr-xr-x    1 root     root                      827 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+-rwxr-xr-x    1 root     root                     1314 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+-rwxr-xr-x    1 root     root                     2807 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.c
+-rwxr-xr-x    1 root     root                      815 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.h
+-rwxr-xr-x    1 root     root                     6504 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/main.c
+-rwxr-xr-x    1 root     root                     7762 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.c
+-rwxr-xr-x    1 root     root                     2361 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.h
+-rwxr-xr-x    1 root     root                    54308 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.c
+-rwxr-xr-x    1 root     root                     1315 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.h
+-rwxr-xr-x    1 root     root                     9619 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.c
+-rwxr-xr-x    1 root     root                      930 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.h
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03
+-rwxr-xr-x    1 root     root                    61256 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin
+-rwxr-xr-x    1 root     root                       84 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin
+-rwxr-xr-x    1 root     root                    24576 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin
+-rwxr-xr-x    1 root     root                 84277400 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+-rwxr-xr-x    1 root     root                    64000 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware
+-rwxr-xr-x    1 root     root                     1904 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NOTICE.md
+-rwxr-xr-x    1 root     root                    22653 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE
+===== BUILD c-arch =====
+c-arch MAKE_EXIT:2
+c-arch SHEBANGS:0
+c-arch ARCHERR:0
+c-arch WROTE:
+c-arch RPMS:
+c-arch GLOB:
+  (no match)
+===== BUILD d-attr =====
+d-attr MAKE_EXIT:0
+d-attr SHEBANGS:19
+d-attr ARCHERR:0
+d-attr WROTE:
+Wrote: /work/gpu-unlock/build/rpm/SRPMS/gpu-unlock-1.0.0-1.fc44.nosrc.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+Wrote: /work/gpu-unlock/build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+d-attr RPMS:
+build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm 45842
+build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm 71078022
+d-attr GLOB:
+  build/rpm/RPMS/noarch/gpu-unlock-dkms-1.0.0-1.fc44.noarch.rpm
+  build/rpm/RPMS/noarch/gpu-unlock-firmware-1.0.0-1.fc44.noarch.rpm
+d-attr QLPV:
+-rw-r--r--    1 root     root                      200 Sep 28 00:00 /usr/lib/dracut/dracut.conf.d/gpu-unlock.conf
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/doc/gpu-unlock
+-rw-r--r--    1 root     root                    11092 Sep 28 00:00 /usr/share/doc/gpu-unlock/README.md
+drw-r--r--    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms
+-rw-r--r--    1 root     root                     1057 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/CMP40HX-MIT.txt
+-rw-r--r--    1 root     root                    18092 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/GPL-2.0.txt
+-rw-r--r--    1 root     root                     1219 Sep 28 00:00 /usr/share/licenses/gpu-unlock-dkms/NVIDIA-MIT.txt
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0
+-rw-r--r--    1 root     root                      148 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Kbuild
+-rw-r--r--    1 root     root                      250 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/Makefile
+-rw-r--r--    1 root     root                      990 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/diagnostic.h
+-rw-r--r--    1 root     root                      489 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/dkms.conf
+-rw-r--r--    1 root     root                      827 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.c
+-rw-r--r--    1 root     root                     1314 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/gfw_eval.h
+-rw-r--r--    1 root     root                     2807 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.c
+-rw-r--r--    1 root     root                      815 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/layout_610.h
+-rw-r--r--    1 root     root                     6504 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/main.c
+-rw-r--r--    1 root     root                     7762 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.c
+-rw-r--r--    1 root     root                     2361 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/prep_610.h
+-rw-r--r--    1 root     root                    54308 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.c
+-rw-r--r--    1 root     root                     1315 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/unlock_610.h
+-rw-r--r--    1 root     root                     9619 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.c
+-rw-r--r--    1 root     root                      930 Sep 28 00:00 /usr/src/gpu-unlock-1.0.0/vbios_610.h
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03
+-rw-r--r--    1 root     root                    61256 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/booter_load_ga102.bin
+-rw-r--r--    1 root     root                       84 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_desc_ga102.bin
+-rw-r--r--    1 root     root                    24576 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_boot_ga102.bin
+-rw-r--r--    1 root     root                 84277400 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/gsp_ga10x.bin
+-rw-r--r--    1 root     root                    64000 Sep 28 00:00 /usr/lib/firmware/gpu-unlock/610.43.03/v67-ga102-610.43.03.bin
+drwxr-xr-x    2 root     root                        0 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware
+-rw-r--r--    1 root     root                     1904 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NOTICE.md
+-rw-r--r--    1 root     root                    22653 Sep 28 00:00 /usr/share/licenses/gpu-unlock-firmware/NVIDIA-LICENSE
+warning: untracked cache is disabled on this system or location
+RESTORED:## cursor/kit-gpu-unlock-cloud-34fb...origin/cursor/kit-gpu-unlock-cloud-34fb

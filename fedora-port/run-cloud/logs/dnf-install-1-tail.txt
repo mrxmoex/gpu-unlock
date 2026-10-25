@@ -1,0 +1,31 @@
+--- tail of first dnf attempt ---
+>>> /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+>>> /var/tmp/rpm-tmp.HYGrdv: line 9: /dev/null: Permission denied
+>>> /var/tmp/rpm-tmp.HYGrdv: line 25: /dev/null: Permission denied
+>>> 
+>>> [RPM] %posttrans(selinux-policy-targeted-44.11-1.fc44.noarch) scriptlet failed, exit status 1
+>>> Running %posttrans scriptlet: fontconfig-0:2.17.0-4.fc44.x86_64
+>>> Finished %posttrans scriptlet: fontconfig-0:2.17.0-4.fc44.x86_64
+>>> Scriptlet output:
+>>> /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+>>> 
+>>> Running %triggerin scriptlet: shared-mime-info-0:2.4-3.fc44.x86_64
+>>> Finished %triggerin scriptlet: shared-mime-info-0:2.4-3.fc44.x86_64
+>>> Scriptlet output:
+>>> /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+>>> /var/tmp/rpm-tmp.ej9wp2: line 1: /dev/null: Permission denied
+>>> 
+>>> Running %triggerin scriptlet: fontconfig-0:2.17.0-4.fc44.x86_64
+>>> Finished %triggerin scriptlet: fontconfig-0:2.17.0-4.fc44.x86_64
+>>> Scriptlet output:
+>>> /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+>>> /usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+>>> 
+>>> Running %triggerin scriptlet: desktop-file-utils-0:0.28-5.fc44.x86_64
+>>> Finished %triggerin scriptlet: desktop-file-utils-0:0.28-5.fc44.x86_64
+>>> Scriptlet output:
+>>> /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+>>> /var/tmp/rpm-tmp.4nljpy: line 1: /dev/null: Permission denied
+>>> 
+Transaction failed: Rpm transaction failed.
+DNF_EXIT:1

@@ -1,0 +1,3 @@
+#
+# Should binaries in noarch packages terminate a build?
+%_binaries_in_noarch_packages_terminate_build	1

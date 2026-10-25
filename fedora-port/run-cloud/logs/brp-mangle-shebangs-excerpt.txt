@@ -1,0 +1,50 @@
+
+cd "$RPM_BUILD_ROOT"
+
+# Large packages such as kernel can have thousands of executable files.
+# We take care to not fork/exec thousands of "file"s and "grep"s,
+# but run just two of them.
+# (Take care to exclude filenames which would mangle "file" output).
+find -executable -type f ! -path '*:*' ! -path $'*\n*' \
+| file -N --mime-type -f - \
+| grep -P ".+(?=: (text/|application/javascript))" \
+| {
+fail=0
+while IFS= read -r line; do
+  f=${line%%:*}
+
+  # Remove the dot
+  path="${f#.}"
+
+  if [ -n "$exclude_files" ]; then
+    echo "$path" | grep -q -E "$exclude_files" && continue
+  fi
+  if [ -n "$exclude_files_from" ]; then
+    echo "$path" | grep -q -E -f "$exclude_files_from" && continue
+  fi
+
+
+  if ! read shebang_line < "$f"; then
+    echo >&2 "*** WARNING: Cannot read the first line from $f, removing executable bit"
+    ts=$(stat -c %y "$f")
+    chmod -x "$f"
+    touch -d "$ts" "$f"
+    continue
+  fi
+
+  orig_shebang="${shebang_line#\#!}"
+  if [ "$orig_shebang" = "$shebang_line" ]; then
+    echo >&2 "*** WARNING: $f is executable but has no shebang, removing executable bit"
+    ts=$(stat -c %y "$f")
+    chmod -x "$f"
+    touch -d "$ts" "$f"
+    continue
+  fi
+
+  # Trim spaces
+  while shebang="${orig_shebang//  / }"; [ "$shebang" != "$orig_shebang" ]; do
+    orig_shebang="$shebang"
+  done
+  # Treat "#! /path/to " as "#!/path/to"
+  orig_shebang="${orig_shebang# }"
+
