@@ -1,0 +1,13 @@
+--- a/kernel-open/nvidia/os-interface.c	2026-10-25 13:26:46.608473540 +0100
++++ b/kernel-open/nvidia/os-interface.c	2026-10-25 13:27:04.240448618 +0100
+@@ -770,8 +770,8 @@
+ void NV_API_CALL os_get_current_process_name(char *buf, NvU32 len)
+ {
+     task_lock(current);
+-    strncpy(buf, current->comm, len - 1);
+-    buf[len - 1] = '\0';
++    /* the 7.2 kernel headers do not declare strncpy(); strscpy_pad() gives the same result: copy len-1 bytes, NUL, zero padding */
++    strscpy_pad(buf, current->comm, len);
+     task_unlock(current);
+ }
+ 

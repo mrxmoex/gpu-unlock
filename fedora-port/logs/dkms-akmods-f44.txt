@@ -1,0 +1,89 @@
+>>> Curl error (28): Timeout was reached for http://mirror.23m.com/fedora/linux/updates/44/Everything/x86_64/Packages/k/kmodtool-1.2.1-1.fc44.noarch.rpm [Connection timed out after 60000 milliseconds] - http://mirror.23m.com/fedora/linux/updates/44/Everything/x86_64/Packages/k/kmodtool-1.2.1-1.fc44.noarch.rpm
+ akmods-0:0.6.2-14.fc44.noarch          100% | 648.0   B/s |  38.7 KiB |  01m01s
+>>> Curl error (28): Timeout was reached for http://mirror.23m.com/fedora/linux/updates/44/Everything/x86_64/Packages/a/akmods-0.6.2-14.fc44.noarch.rpm [Connection timed out after 60000 milliseconds] - http://mirror.23m.com/fedora/linux/updates/44/Everything/x86_64/Packages/a/akmods-0.6.2-14.fc44.noarch.rpm
+ dkms-0:3.4.4-1.fc44.noarch             100% |   2.0 KiB/s | 121.9 KiB |  01m01s
+>>> Curl error (28): Timeout was reached for http://mirror.23m.com/fedora/linux/updates/44/Everything/x86_64/Packages/d/dkms-3.4.4-1.fc44.noarch.rpm [Connection timed out after 60000 milliseconds] - http://mirror.23m.com/fedora/linux/updates/44/Everything/x86_64/Packages/d/dkms-3.4.4-1.fc44.noarch.rpm
+akmods-0.6.2-14.fc44.noarch.rpm
+dkms-3.4.4-1.fc44.noarch.rpm
+kmodtool-1.2.1-1.fc44.noarch.rpm
+### /tmp/dl/akmods-0.6.2-14.fc44.noarch.rpm
+akmods-0.6.2-14.fc44
+### /tmp/dl/dkms-3.4.4-1.fc44.noarch.rpm
+dkms-3.4.4-1.fc44
+### /tmp/dl/kmodtool-1.2.1-1.fc44.noarch.rpm
+kmodtool-1.2.1-1.fc44
+### dkms files
+/etc/dkms/framework.conf
+/etc/dkms/framework.conf.d
+/usr/share/doc/dkms/images/mok-key-1.png
+/usr/share/doc/dkms/images/mok-key-2.png
+/usr/share/doc/dkms/images/mok-key-3.png
+/usr/share/doc/dkms/images/mok-key-4.png
+/usr/share/doc/dkms/images/mok-key-5.png
+/usr/share/doc/dkms/images/mok-key-6.png
+### dkms scripts (post)
+postinstall scriptlet (using /bin/sh):
+
+ 
+if [ $1 -eq 1 ] && [ -x "/usr/lib/systemd/systemd-update-helper" ]; then 
+    # Initial installation 
+    /usr/lib/systemd/systemd-update-helper install-system-units dkms.service || : 
+fi
+preuninstall scriptlet (using /bin/sh):
+
+ 
+if [ $1 -eq 0 ] && [ -x "/usr/lib/systemd/systemd-update-helper" ]; then 
+    # Package removal, not upgrade 
+    /usr/lib/systemd/systemd-update-helper remove-system-units dkms.service || : 
+fi
+postuninstall program: /bin/sh
+### akmods files
+/etc/logrotate.d/akmods
+/etc/pki/akmods/cacert.config.in
+/etc/pki/akmods/certs
+/etc/pki/akmods/private
+/run/akmods
+/usr/bin/akmods
+/usr/bin/akmods-ostree-post
+/usr/bin/akmods-shutdown
+/usr/bin/akmodsbuild
+/usr/bin/kmodgenca
+/usr/lib/kernel/install.d/95-akmodsposttrans.install
+/usr/lib/systemd/system/akmods-keygen.target
+/usr/lib/systemd/system/akmods-keygen@.service
+/usr/lib/systemd/system/akmods-shutdown.service
+/usr/lib/systemd/system/akmods.service
+/usr/lib/systemd/system/akmods@.service
+/usr/lib/sysusers.d/akmods.conf
+/usr/lib/tmpfiles.d/akmods.conf
+/usr/share/doc/akmods
+/usr/share/doc/akmods/README
+/usr/share/doc/akmods/README.secureboot
+/usr/share/licenses/akmods
+/usr/share/licenses/akmods/LICENSE
+/usr/share/man/man1/akmods.1.gz
+/usr/share/man/man1/akmodsbuild.1.gz
+/usr/src/akmods
+/var/cache/akmods
+/var/log/akmods
+### akmods requires
+(grubby or sdubby)
+(jq if sdubby)
+(kernel-debug-devel-matched if kernel-debug-core)
+(kernel-devel-matched if kernel-core)
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/usr/bin/bash
+/usr/bin/flock
+/usr/bin/rpmdev-vercmp
+/usr/bin/time
+bzip2
+config(akmods) = 0.6.2-14.fc44
+coreutils
+diffutils
+file
+filesystem(unmerged-sbin-symlinks)
+findutils
+gawk
