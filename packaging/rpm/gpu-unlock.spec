@@ -58,12 +58,14 @@ make DESTDIR=%{buildroot} ASSETS="$PWD/assets" \
     install-dkms install-firmware install-dracut
 
 %files dkms
+%defattr(0644,root,root,0755)
 %license licenses/GPL-2.0.txt licenses/CMP40HX-MIT.txt licenses/NVIDIA-MIT.txt
 %doc %{_docdir}/gpu-unlock
 %{_usrsrc}/gpu-unlock-%{version}
 %{_prefix}/lib/dracut/dracut.conf.d/gpu-unlock.conf
 
 %files firmware
+%defattr(0644,root,root,0755)
 %license %{_defaultlicensedir}/gpu-unlock-firmware
 %{_prefix}/lib/firmware/gpu-unlock
 
